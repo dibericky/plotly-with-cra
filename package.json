@@ -4,7 +4,9 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "http://dibericky.github.io/plotly-with-cra",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "ify-loader": "1.1.0",
     "plotly.js": "1.51.1",
     "react": "16.8.6",
@@ -20,7 +22,9 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
