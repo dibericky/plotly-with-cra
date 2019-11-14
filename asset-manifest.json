@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/plotly-with-cra/static/css/main.9b1431d8.chunk.css",
+    "main.js": "/plotly-with-cra/static/js/main.5d76885d.chunk.js",
+    "main.js.map": "/plotly-with-cra/static/js/main.5d76885d.chunk.js.map",
+    "runtime~main.js": "/plotly-with-cra/static/js/runtime~main.b9849e01.js",
+    "runtime~main.js.map": "/plotly-with-cra/static/js/runtime~main.b9849e01.js.map",
+    "static/js/2.1a675004.chunk.js": "/plotly-with-cra/static/js/2.1a675004.chunk.js",
+    "static/js/2.1a675004.chunk.js.map": "/plotly-with-cra/static/js/2.1a675004.chunk.js.map",
+    "index.html": "/plotly-with-cra/index.html",
+    "precache-manifest.41d021a6505566dec9db54a34a038370.js": "/plotly-with-cra/precache-manifest.41d021a6505566dec9db54a34a038370.js",
+    "service-worker.js": "/plotly-with-cra/service-worker.js",
+    "static/css/main.9b1431d8.chunk.css.map": "/plotly-with-cra/static/css/main.9b1431d8.chunk.css.map"
+  }
+}
