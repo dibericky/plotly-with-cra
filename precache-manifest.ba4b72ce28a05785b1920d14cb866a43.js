@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe360a7ca5219313de41a7f289581fd9",
+    "revision": "12dd0f1929bca98f1cb64a337ab8c28d",
     "url": "/plotly-with-cra/index.html"
   },
   {
-    "revision": "8613ebf29f26dccf63ce",
+    "revision": "9b8ae5884c505436c733",
     "url": "/plotly-with-cra/static/css/main.9b1431d8.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/plotly-with-cra/static/js/2.1a675004.chunk.js"
   },
   {
-    "revision": "8613ebf29f26dccf63ce",
-    "url": "/plotly-with-cra/static/js/main.5d76885d.chunk.js"
+    "revision": "9b8ae5884c505436c733",
+    "url": "/plotly-with-cra/static/js/main.01a5cdfc.chunk.js"
   },
   {
     "revision": "ff0e7d2e8c34ed8bb400",

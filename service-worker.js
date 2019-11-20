@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/plotly-with-cra/precache-manifest.41d021a6505566dec9db54a34a038370.js"
+  "/plotly-with-cra/precache-manifest.ba4b72ce28a05785b1920d14cb866a43.js"
 );
 
 self.addEventListener('message', (event) => {
