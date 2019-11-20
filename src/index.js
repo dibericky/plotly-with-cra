@@ -47,15 +47,23 @@ Plotly.d3.csv(rawDataURL, function(err, rawData) {
 function prepData(rawData) {
     var x = [];
     var y = [];
+    var textList = []
 
     rawData.forEach(function(datum, i) {
 
         x.push(new Date(datum[xField]));
         y.push(datum[yField]);
+        textList.push(`Min: ${datum.Min_TemperatureC}, Max: ${datum.Max_TemperatureC}`)
     });
 
     return [{
+        marker: {
+            color: '#178CF8'
+        },
+        hoveron: 'points+fills',
         mode: 'lines',
+        text: textList,
+        fillcolor: '#000',
         x: x,
         y: y
     }];
@@ -64,17 +72,36 @@ class App extends React.Component {
   render() {
     return (
       <Plot
+        // ref: https://github.com/plotly/react-plotly.js/blob/master/README.md#event-handler-props
+        onClick={e => console.log('Clicked on', e)}
+        onRelayout={e => console.log('Slider is changed', e)}
         data={prepData(rawData)}
         layout={{
           title: 'Time series with range slider and selectors',
           xaxis: {
-              rangeselector: selectorOptions,
-              rangeslider: {}
+              rangeslider: {
+                  thickness: 0.2,
+                  bgcolor: '#F0F3F9'
+              },
+              zeroline: false,
+              showgrid: false
           },
           yaxis: {
-              fixedrange: true
-          }
-      }}
+              fixedrange: true,
+              zeroline: false
+          },
+          showlegend: false,
+          hoverlabel: {
+            bgcolor: '#fafafa',
+            bordercolor: '#888',
+            font: {
+              color: '#222',
+              family: 'Open Sans',
+              size: 16
+            }
+            }
+        }}
+      config={{displayModeBar: false}}
       />
     );
   }
